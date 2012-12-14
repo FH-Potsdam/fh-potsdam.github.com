@@ -9,10 +9,10 @@ pygments: true
 # Themes are encouraged to use these universal variables 
 # so be sure to set them if your theme uses them.
 #
-title : fh-potsdam github page
+title : fh-potsdam
 tagline: Site Tagline
 author :
-  name : Name Lastname
+  name : Interface Design @FHP
   email : blah@email.test
   github : fh-potsdam
   twitter : username
