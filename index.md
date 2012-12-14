@@ -12,12 +12,14 @@ Scripts and resources for working with advanced typography and code automation i
 http://fabiantheblind.github.com/Typography-And-Automation/  
 https://github.com/fabiantheblind/auto-typo-adbe-id
 
+
 ### Unfolding Maps
 
 Unfolding is a library to create interactive maps and geovisualizations in Processing and Java.
 
 http://unfoldingmaps.org/  
 https://github.com/tillnagel/unfolding
+
 
 ### Map Interfaces Class Material
 
@@ -32,6 +34,7 @@ https://github.com/MapInterfaces/map-interfaces-fhp
 http://eco-challenge.eu/  
 https://github.com/raureif/ecochallenge
 
+
 ### Fritzing
 
 We are creating a software tool, a community website and services in the spirit of Processing and Arduino, fostering an ecosystem that allows users to document their prototypes, share them with others, teach electronics in a classroom, and layout and manufacture professional pcbs.
@@ -39,9 +42,14 @@ We are creating a software tool, a community website and services in the spirit 
 http://fritzing.org/  
 http://code.google.com/p/fritzing/  
 
+
 ### Speech-To-Text Library for Processing
 
 The library listens to the microphone input of your computer and sends recordings of your voice to Google for further processing.
 
 http://stt.getflourish.com/  
 https://github.com/getflourish/STT
+
+
+
+{% render_time Page generated at: %}
