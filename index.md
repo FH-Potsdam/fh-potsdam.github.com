@@ -3,7 +3,6 @@ layout: page
 title: Repositories
 tagline: Index of public and open source projects created at the University of Applied Sciences in Potsdam, Germany
 ---
-{% include JB/setup %}
 
 ### Typography and Automation
 
@@ -49,7 +48,3 @@ The library listens to the microphone input of your computer and sends recording
 
 http://stt.getflourish.com/  
 https://github.com/getflourish/STT
-
-
-
-{% render_time Page generated at: %}
