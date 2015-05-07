@@ -1,7 +1,7 @@
 title: fh-potsdam
 description: fh-potsdam github organisation page
-url: http://fh-potsdam.github.io
-# baseurl:
+baseurl: /
+production_url: http://fh-potsdam.github.io
 
 author: Interface Design @FHP
 author_email: blah@email.test
