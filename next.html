@@ -1,20 +1,22 @@
 ---
 layout: page
-title: FH-Potsdam Interface Design @GitHub
+title: FH-Potsdam Interface Design
 ---
 
-We are <a href="https://github.com/orgs/fh-potsdam/people" id="org-total-members">XY Members</a> with <a href="" id="org-total-repos">YY public repositories</a>
+<div id="member-repo-stats">
+  We are <a href="https://github.com/orgs/fh-potsdam/people" id="org-total-members">X Members</a> with <a href="" id="org-total-repos">Y Public Repositories</a>
+</div>
 
 
-<!--<style media="screen">
-  .repo-block {
-    background-color: gray;
-    border: 1px;
-  }
-</style>-->
-
-
-<pre id="repos"></pre>
+{% for repo in site.github.public_repositories %}
+<div class="repo-data">
+  <h3><a href="{{repo.html_url}}">{{repo.name}}</a></h3>
+  stars: {{repo.stargazers_count}}
+  forks: {{repo.forks_count}}
+  language: {{repo.language}}
+  <p>{{repo.description}}</p>
+</div>
+{% endfor %}
 
 
 <script charset="utf-8">
@@ -23,10 +25,6 @@ We are <a href="https://github.com/orgs/fh-potsdam/people" id="org-total-members
   // http://www.carsonshold.com/2014/05/github-metadata-with-jekyll-and-javascript/
   var repos = {{ site.github.public_repositories | jsonify }};
   var members = {{ site.github.organization_members | jsonify }};
-
-  document.getElementById('repos').innerHTML = JSON.stringify(repos, null, 2);
-  console.log('members', JSON.stringify(members, null, 2));
-
 
   function setTotalMembers(num) {
     document.getElementById('org-total-members').innerHTML = num+' Members';
@@ -38,6 +36,3 @@ We are <a href="https://github.com/orgs/fh-potsdam/people" id="org-total-members
   setTotalMembers(members.length);
   setTotalRepos(repos.length);
 </script>
-
-
-<p>revision: {{ site.github.build_revision }}</p>

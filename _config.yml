@@ -3,7 +3,7 @@ description: fh-potsdam github organisation page
 baseurl: /
 production_url: http://fh-potsdam.github.io
 
-author: Interface Design @FHP
+author: FHP InterfaceDesign
 # author_email: blah@email.test
 
 exclude: ["README.md"]
