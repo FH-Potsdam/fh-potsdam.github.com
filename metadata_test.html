@@ -1,14 +1,24 @@
 ---
 layout: page
 title: Metadata-Test
-header: Pages
 ---
-{% include JB/setup %}
 
 <script charset="utf-8">
-  var github = {% site.github | jsonify %};
-  console.log('github', github);
+  var repos = [];
 
-  // var repos = {{ site.github.public_repositories | jsonify }};
-  // console.log(repos);
+  {% for repo in site.github.public_repositories %}
+    var repo = {
+      name: "{{repo.name}}",
+      html_url: "{{repo.html_url}}",
+      description: "{{repo.description}}",
+      homepage: "{{repo.homepage}}",
+      language: "{{repo.language}}",
+      stars: {{repo.stargazers_count}},
+      forks: {{repo.forks_count}},
+      fork: {{repo.fork}}
+    };
+    repos.push(repo);
+  {% endfor %}
+
+  console.log('repos:', repos);
 </script>
