@@ -6,12 +6,12 @@ title: FH-Potsdam Interface Design @GitHub
 We are <a href="https://github.com/orgs/fh-potsdam/people">XY Members</a> with <a href="">YY public repositories</a>
 
 
-<style media="screen">
+<!--<style media="screen">
   .repo-block {
     background-color: gray;
     border: 1px;
   }
-</style>
+</style>-->
 
 
 <pre id="repos"></pre>
@@ -21,19 +21,4 @@ We are <a href="https://github.com/orgs/fh-potsdam/people">XY Members</a> with <
   // http://www.carsonshold.com/2014/05/github-metadata-with-jekyll-and-javascript/
   var repos = {{ site.github.public_repositories | jsonify }};
   document.getElementById('repos').innerHTML = JSON.stringify(repos, null, 2);
-
-  var members = {{ site.github.organization_members | jsonify }};
-  console.log('members', JSON.stringify(members, null, 2));
-
-  var site = {{ site | jsonify }};
-  console.log('site', JSON.stringify(site, null, 2));
 </script>
-
-
-
-<!-- {% for page in site.pages %}
-<div class="col-md-4 repo-block">
-
-  {{site.production_url}}{{ page.url }}
-</div>
-{% endfor %} -->
