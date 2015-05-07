@@ -22,8 +22,8 @@ We are <a href="https://github.com/orgs/fh-potsdam/people">XY Members</a> with <
   var repos = {{ site.github.public_repositories | jsonify }};
   document.getElementById('repos').innerHTML = JSON.stringify(repos, null, 2);
 
-  var github = {{ site.github | jsonify }};
-  console.log(JSON.stringify(github, null, 2));
+  var members = {{ site.github.members | jsonify }};
+  console.log(JSON.stringify(members, null, 2));
 </script>
 
 
