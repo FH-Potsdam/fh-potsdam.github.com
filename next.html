@@ -9,13 +9,22 @@ title: FH-Potsdam Interface Design
 
 
 {% for repo in site.github.public_repositories %}
-<div class="repo-data">
-  <h3><a href="{{repo.html_url}}">{{repo.name}}</a></h3>
-  stars: {{repo.stargazers_count}}
-  forks: {{repo.forks_count}}
-  language: {{repo.language}}
-  <p>{{repo.description}}</p>
+<div class="row repo-data">
+  <div class="col-md-8">
+    <h3><a href="{{repo.html_url}}">{{repo.name}}</a></h3>
+  </div>
+  <div class="col-md-2 repo-language">
+    {{repo.language}}
+  </div>
+  <div class="col-md-2 repo-icons">
+    <span class="octicon octicon-star"></span> {{repo.stargazers_count}}
+    <span class="octicon octicon-repo-forked"></span> {{repo.forks_count}}
+  </div>
+  <div class="col-md-12">
+    <p>{{repo.description}}</p>
+  </div>
 </div>
+<hr>
 {% endfor %}
 
 

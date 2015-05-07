@@ -22,7 +22,17 @@ a {
   margin-bottom: 25px;
 }
 
-.repo-data {
+/*.repo-data {
   border:1px solid;
   color:white;
+}*/
+.repo-language {
+  margin-top: 26px;
+}
+.repo-icons {
+  margin-top: 26px;
+}
+
+footer {
+  margin-top: 50px;
 }
