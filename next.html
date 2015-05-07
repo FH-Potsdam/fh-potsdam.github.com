@@ -3,7 +3,7 @@ layout: page
 title: FH-Potsdam Interface Design @GitHub
 ---
 
-<!-- We are <a href="https://github.com/orgs/fh-potsdam/people">XY Members</a> with <a href="">YY public repositories</a> -->
+We are <a href="https://github.com/orgs/fh-potsdam/people" id="org-total-members">XY Members</a> with <a href="" id="org-total-repos">YY public repositories</a>
 
 
 <!--<style media="screen">
@@ -15,13 +15,29 @@ title: FH-Potsdam Interface Design @GitHub
 
 
 <pre id="repos"></pre>
+
+
 <script charset="utf-8">
   // some infos can be found here...
   // https://help.github.com/articles/repository-metadata-on-github-pages
   // http://www.carsonshold.com/2014/05/github-metadata-with-jekyll-and-javascript/
   var repos = {{ site.github.public_repositories | jsonify }};
-  document.getElementById('repos').innerHTML = JSON.stringify(repos, null, 2);
-
   var members = {{ site.github.organization_members | jsonify }};
+
+  document.getElementById('repos').innerHTML = JSON.stringify(repos, null, 2);
   console.log('members', JSON.stringify(members, null, 2));
+
+
+  function setTotalMembers(num) {
+    document.getElementById('org-total-members').innerHTML = num+' Members';
+  }
+  function setTotalRepos(num) {
+    document.getElementById('org-total-repos').innerHTML = num+' Public Repositories';
+  }
+
+  setTotalMembers(members.length);
+  setTotalRepos(repos.length);
 </script>
+
+
+<p>revision: {{ site.github.build_revision }}</p>
