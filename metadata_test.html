@@ -26,7 +26,7 @@ title: Metadata-Test
 
   var repos = {{ site.github.public_repositories | jsonify }};
 
-  document.getElementById('repos').innerHTML = repos;
+  document.getElementById('repos').innerHTML = JSON.stringify(repos, null, 2);
 </script>
 
 
