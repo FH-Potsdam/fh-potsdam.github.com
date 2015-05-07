@@ -1,0 +1,36 @@
+---
+layout: page
+title: FH-Potsdam Interface Design @GitHub
+---
+
+We are <a href="https://github.com/orgs/fh-potsdam/people">XY Members</a> with <a href="">YY public repositories</a>
+
+
+<style media="screen">
+  .repo-block {
+    background-color: gray;
+    border: 1px;
+  }
+</style>
+
+
+<pre id="repos"></pre>
+<script charset="utf-8">
+  // some infos can be found here...
+  // https://help.github.com/articles/repository-metadata-on-github-pages
+  // http://www.carsonshold.com/2014/05/github-metadata-with-jekyll-and-javascript/
+  var repos = {{ site.github.public_repositories | jsonify }};
+  document.getElementById('repos').innerHTML = JSON.stringify(repos, null, 2);
+
+  var github = {{ site.github | jsonify }};
+  console.log(JSON.stringify(github, null, 2));
+</script>
+
+
+
+<!-- {% for page in site.pages %}
+<div class="col-md-4 repo-block">
+
+  {{site.production_url}}{{ page.url }}
+</div>
+{% endfor %} -->

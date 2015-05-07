@@ -1,3 +1,3 @@
+# fh-potsdam.github.com
 
-For all usage and documentation please see: <http://jekyllbootstrap.com>
-Jekyll-Bootstrap Version 0.2.13
+For usage check out the [jekyll](http://jekyllrb.com/) and [GitHub Pages](https://pages.github.com/) docs.

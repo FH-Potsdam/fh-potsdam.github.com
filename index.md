@@ -1,8 +1,9 @@
 ---
 layout: page
 title: Repositories
-tagline: Index of public and open source projects created at the University of Applied Sciences in Potsdam, Germany
 ---
+
+## Index of public and open source projects created at the University of Applied Sciences in Potsdam, Germany
 
 ### Typography and Automation
 
