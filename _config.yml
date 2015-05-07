@@ -4,9 +4,7 @@ baseurl: /
 production_url: http://fh-potsdam.github.io
 
 author: Interface Design @FHP
-author_email: blah@email.test
-# twitter: username
-# feedburner: feedname
+# author_email: blah@email.test
 
 exclude: ["README.md"]
 auto: true
