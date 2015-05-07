@@ -1,14 +1,14 @@
-<html>
-  <head>
-    <title>metadata test</title>
-  </head>
-  <body>
-    <script charset="utf-8">
-      var github = {% site.github | jsonify %};
-      console.log('github', github);
+---
+layout: page
+title: Metadata-Test
+header: Pages
+---
+{% include JB/setup %}
 
-      // var repos = {{ site.github.public_repositories | jsonify }};
-      // console.log(repos);
-    </script>
-  </body>
-</html>
+<script charset="utf-8">
+  var github = {% site.github | jsonify %};
+  console.log('github', github);
+
+  // var repos = {{ site.github.public_repositories | jsonify }};
+  // console.log(repos);
+</script>
