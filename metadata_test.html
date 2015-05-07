@@ -4,8 +4,11 @@
   </head>
   <body>
     <script charset="utf-8">
-      var repos = {{ site.github.public_repositories | jsonify }};
-      console.log(repos);
+      var github = {% site.github | jsonify %};
+      console.log('github', github);
+
+      // var repos = {{ site.github.public_repositories | jsonify }};
+      // console.log(repos);
     </script>
   </body>
 </html>
