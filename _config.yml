@@ -4,8 +4,10 @@ baseurl: /
 production_url: http://fh-potsdam.github.io
 
 author: FHP InterfaceDesign
-# author_email: blah@email.test
 
 exclude: ["README.md"]
 auto: true
 pygments: true
+
+repo_blacklist:
+  - fh-potsdam.github.com
