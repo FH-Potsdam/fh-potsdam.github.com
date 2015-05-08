@@ -37,7 +37,7 @@ title: FH-Potsdam Interface Design
 
   var repoBlacklist = [];
   {% for repo_black in site.repo_blacklist %}
-    repoBlacklist.push({{ repo_black }});
+    repoBlacklist.push('{{ repo_black }}');
   {% endfor %}
 
   function setTotalMembers(num) {
