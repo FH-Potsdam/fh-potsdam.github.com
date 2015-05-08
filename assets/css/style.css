@@ -22,8 +22,14 @@ a {
   margin-bottom: 25px;
 }
 
-.repo-language {
+.repo-language-container {
   margin-top: 26px;
+}
+.repo-language {
+  display: inline;
+  padding: .2em .6em .3em;
+  vertical-align: baseline;
+  border-radius: .25em;
 }
 .repo-icons {
   margin-top: 26px;
