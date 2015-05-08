@@ -35,17 +35,189 @@ footer {
 
 /*
  language color
+ based on https://github.com/Diastro/github-colors/blob/master/github-colors.json
  */
-.Processing-Language { color: blue; }
-.JavaScript-Language { color: yellow; }
-.Shell-Language { color: gray; }
-.C-Language { color: red; }
-.Arduino-Language { color: green; }
-.HTML-Language { color: white; }
-.AppleScript-Language { color: gray; }
-.Java-Language { color: orange; }
-.Python-Language { color: cyan; }
-.CSS-Language { color: white; }
-.CartoCSS-Language { color: white; }
-.R-Language { color: white; }
-.Ruby-Language { color: red; }
+.Mercury-Language { color: #ff2b2b; }
+.TypeScript-Language { color: #2b7489; }
+.PureBasic-Language { color: #5a6986; }
+.Objective-C++-Language { color: #6866fb; }
+.Self-Language { color: #0579aa; }
+.edn-Language { color: #db5855; }
+.NewLisp-Language { color: #87AED7; }
+.Rebol-Language { color: #358a5b; }
+.Frege-Language { color: #00cafe; }
+.Dart-Language { color: #00B4AB; }
+.AspectJ-Language { color: #a957b0; }
+.Shell-Language { color: #89e051; }
+/*.Web Ontology Language-Language { color: #9cc9dd; }*/
+.xBase-Language { color: #403a40; }
+.Eiffel-Language { color: #946d57; }
+.Nix-Language { color: #7e7eff; }
+.RAML-Language { color: #77d9fb; }
+.MTML-Language { color: #b7e1f4; }
+.Elixir-Language { color: #6e4a7e; }
+.SAS-Language { color: #B34936; }
+.Agda-Language { color: #315665; }
+.wisp-Language { color: #7582D1; }
+.D-Language { color: #fcd46d; }
+.Kotlin-Language { color: #EA4DFA; }
+.Opal-Language { color: #f7ede0; }
+.Crystal-Language { color: #776791; }
+.Objective-C-Language { color: #438eff; }
+/*.ColdFusion CFC-Language { color: #ed2cd6; }*/
+.Oz-Language { color: #fab738; }
+.Mirah-Language { color: #c7a938; }
+.Objective-J-Language { color: #ff0c5a; }
+.Handlebars-Language { color: #01a9d6; }
+.Gosu-Language { color: #82937f; }
+.Ruby-Language { color: #701516; }
+/*.Component Pascal-Language { color: #b0ce4e; }*/
+.Arc-Language { color: #aa2afe; }
+.Brainfuck-Language { color: #2F2530; }
+.Nit-Language { color: #009917; }
+.APL-Language { color: #5A8164; }
+.Go-Language { color: #375eab; }
+/*.Visual Basic-Language { color: #945db7; }*/
+.PHP-Language { color: #4F5D95; }
+.Cirru-Language { color: #ccccff; }
+.SQF-Language { color: #3F3F3F; }
+.Glyph-Language { color: #e4cc98; }
+.Java-Language { color: #b07219; }
+.Scala-Language { color: #7dd3b0; }
+.Makefile-Language { color: #427819; }
+.ColdFusion-Language { color: #ed2cd6; }
+.Perl-Language { color: #0298c3; }
+.Lua-Language { color: #000080; }
+.Verilog-Language { color: #b2b7f8; }
+.Factor-Language { color: #636746; }
+.Haxe-Language { color: #f7941e; }
+/*.Pure Data-Language { color: #91de79; }*/
+.Forth-Language { color: #341708; }
+.Red-Language { color: #ee0000; }
+.Hy-Language { color: #7790B2; }
+.Volt-Language { color: #1F1F1F; }
+.LSL-Language { color: #3d9970; }
+.eC-Language { color: #913960; }
+.CoffeeScript-Language { color: #244776; }
+.HTML-Language { color: #e44b23; }
+/*.API Blueprint-Language { color: #2ACCA8; }*/
+.Swift-Language { color: #ffac45; }
+.C-Language { color: #555555; }
+.AutoHotkey-Language { color: #6594b9; }
+.Isabelle-Language { color: #FEFE00; }
+.Clarion-Language { color: #db901e; }
+.Boo-Language { color: #d4bec1; }
+.AutoIt-Language { color: #1C3552; }
+.Clojure-Language { color: #db5855; }
+.Rust-Language { color: #dea584; }
+.Prolog-Language { color: #74283c; }
+.SourcePawn-Language { color: #5c7611; }
+.AMPL-Language { color: #E6EFBB; }
+.FORTRAN-Language { color: #4d41b1; }
+.ANTLR-Language { color: #9DC3FF; }
+.Harbour-Language { color: #0e60e3; }
+.Tcl-Language { color: #e4cc98; }
+.BlitzMax-Language { color: #cd6400; }
+.PigLatin-Language { color: #fcd7de; }
+.Lasso-Language { color: #999999; }
+.ECL-Language { color: #8a1267; }
+.VHDL-Language { color: #adb2cb; }
+.Elm-Language { color: #60B5CC; }
+/*.Propeller Spin-Language { color: #7fa2a7; }*/
+.IDL-Language { color: #a3522f; }
+.ATS-Language { color: #1ac620; }
+.Ada-Language { color: #02f88c; }
+.Nu-Language { color: #c9df40; }
+.LFE-Language { color: #004200; }
+.SuperCollider-Language { color: #46390b; }
+.Oxygene-Language { color: #cdd0e3; }
+.ASP-Language { color: #6a40fd; }
+.Assembly-Language { color: #6E4C13; }
+.Gnuplot-Language { color: #f0a9f0; }
+.JFlex-Language { color: #DBCA00; }
+.NetLinx-Language { color: #0aa0ff; }
+/*.C#-Language { color: #178600; }*/
+.Turing-Language { color: #45f715; }
+.Vala-Language { color: #fbe5cd; }
+.Processing-Language { color: #0096D8; }
+.Arduino-Language { color: #bd79d1; }
+.FLUX-Language { color: #88ccff; }
+.NetLogo-Language { color: #ff6375; }
+.CSS-Language { color: #563d7c; }
+/*.Emacs Lisp-Language { color: #c065db; }*/
+.SaltStack-Language { color: #646464; }
+.QML-Language { color: #44a51c; }
+.Pike-Language { color: #005390; }
+.LOLCODE-Language { color: #cc9900; }
+.ooc-Language { color: #b0b77e; }
+.XC-Language { color: #99DA07; }
+.J-Language { color: #9EEDFF; }
+.Mask-Language { color: #f97732; }
+.EmberScript-Language { color: #FFF4F3; }
+.TeX-Language { color: #3D6117; }
+.Nemerle-Language { color: #3d3c6e; }
+.KRL-Language { color: #28431f; }
+/*.Unified Parallel C-Language { color: #4e3617; }*/
+.Golo-Language { color: #88562A; }
+.Fancy-Language { color: #7b9db4; }
+.OCaml-Language { color: #3be133; }
+.Shen-Language { color: #120F14; }
+.Pascal-Language { color: #b0ce4e; }
+/*.F#-Language { color: #b845fc; }*/
+.Puppet-Language { color: #332A77; }
+.ActionScript-Language { color: #882B0F; }
+.Diff-Language { color: #88dddd; }
+/*.Ragel in Ruby Host-Language { color: #e17600; }*/
+.Fantom-Language { color: #dbded5; }
+.Zephir-Language { color: #118f9e; }
+.Smalltalk-Language { color: #596706; }
+.DM-Language { color: #447265; }
+.Ioke-Language { color: #078193; }
+.PogoScript-Language { color: #d80074; }
+.LiveScript-Language { color: #499886; }
+.JavaScript-Language { color: #f1e05a; }
+.VimL-Language { color: #199f4b; }
+.PureScript-Language { color: #1D222D; }
+.ABAP-Language { color: #E8274B; }
+.Matlab-Language { color: #bb92ac; }
+.Slash-Language { color: #007eff; }
+.R-Language { color: #198ce7; }
+.Erlang-Language { color: #B83998; }
+.Pan-Language { color: #cc0000; }
+.LookML-Language { color: #652B81; }
+.Eagle-Language { color: #814C05; }
+.Scheme-Language { color: #1e4aec; }
+.Squirrel-Language { color: #800000; }
+.Python-Language { color: #3572A5; }
+.Max-Language { color: #c4a79c; }
+/*.Common Lisp-Language { color: #3fb68b; }*/
+.Latte-Language { color: #A8FF97; }
+.XQuery-Language { color: #5232e7; }
+.Omgrofl-Language { color: #cabbff; }
+.Nimrod-Language { color: #37775b; }
+.SystemVerilog-Language { color: #DAE1C2; }
+.Chapel-Language { color: #8dc63f; }
+.Groovy-Language { color: #e69f56; }
+.Dylan-Language { color: #6c616e; }
+.E-Language { color: #ccce35; }
+.Parrot-Language { color: #f3ca0a; }
+.Grammatical Framework-Language { color: #79aa7a; }
+/*.Game Maker Language-Language { color: #8fb200; }*/
+.Papyrus-Language { color: #6600cc; }
+.C++-Language { color: #f34b7d; }
+/*.NetLinx+ERB-Language { color: #747faa; }*/
+.Clean-Language { color: #3F85AF; }
+.Alloy-Language { color: #cc5c24; }
+.PAWN-Language { color: #dbb284; }
+.UnrealScript-Language { color: #a54c4d; }
+/*.Standard ML-Language { color: #dc566d; }*/
+.Slim-Language { color: #ff8f77; }
+.Perl6-Language { color: #0000fb; }
+.Julia-Language { color: #a270ba; }
+.Haskell-Language { color: #29b544; }
+.Io-Language { color: #a9188d; }
+.Rouge-Language { color: #cc0088; }
+.Racket-Language { color: #22228f; }
+/*.AGS Script-Language { color: #B9D9FF; }*/
+.Dogescript-Language { color: #cca760; }
+.nesC-Language { color: #94B0C7; }
