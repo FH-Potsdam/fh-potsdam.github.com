@@ -22,10 +22,6 @@ a {
   margin-bottom: 25px;
 }
 
-/*.repo-data {
-  border:1px solid;
-  color:white;
-}*/
 .repo-language {
   margin-top: 26px;
 }
@@ -36,3 +32,20 @@ a {
 footer {
   margin-top: 50px;
 }
+
+/*
+ language color
+ */
+.Processing-Language { color: blue; }
+.JavaScript-Language { color: yellow; }
+.Shell-Language { color: gray; }
+.C-Language { color: red; }
+.Arduino-Language { color: green; }
+.HTML-Language { color: white; }
+.AppleScript-Language { color: gray; }
+.Java-Language { color: orange; }
+.Python-Language { color: cyan; }
+.CSS-Language { color: white; }
+.CartoCSS-Language { color: white; }
+.R-Language { color: white; }
+.Ruby-Language { color: red; }
