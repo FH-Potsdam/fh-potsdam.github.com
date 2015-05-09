@@ -12,7 +12,7 @@ title: FH-Potsdam Interface Design
 
 {% for repo_black in site.repo_blacklist %}
 {% if repo.name != repo_black %}
-<div class="row repo-data">
+<div class="row repo-data filter-{{repo.language}}">
   <div class="col-md-8">
     <h3><a href="{{repo.html_url}}">{{repo.name}}</a></h3>
   </div>
@@ -37,10 +37,8 @@ title: FH-Potsdam Interface Design
 <script charset="utf-8">
   // some infos can be found here...
   // https://help.github.com/articles/repository-metadata-on-github-pages
-  // http://www.carsonshold.com/2014/05/github-metadata-with-jekyll-and-javascript/
-  var repos = {{ site.github.public_repositories | jsonify }};
   var members = {{ site.github.organization_members | jsonify }};
-
+  var repos = {{ site.github.public_repositories | jsonify }};
   var repoBlacklist = [];
   {% for repo_black in site.repo_blacklist %}
     repoBlacklist.push('{{ repo_black }}');
@@ -52,7 +50,6 @@ title: FH-Potsdam Interface Design
   function setTotalRepos(num) {
     document.getElementById('org-total-repos').innerHTML = num+' Public Repositories';
   }
-
   setTotalMembers(members.length);
   setTotalRepos(repos.length);
 </script>
