@@ -22,10 +22,16 @@ a {
   margin-bottom: 25px;
 }
 
+
 .member-avatar {
   max-width:100%;
   max-height:100%;
 }
+.member-avatar-container {
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
 
 .repo-language-container {
   margin-top: 26px;
