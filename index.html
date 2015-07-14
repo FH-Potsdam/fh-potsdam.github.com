@@ -10,8 +10,6 @@ title: FH-Potsdam Interface Design
 
 {% for repo in site.github.public_repositories %}
 
-{% for repo_black in site.repo_blacklist %}
-{% if repo.name != repo_black %}
 <div class="row repo-data filter-{{repo.language}}">
   <div class="col-md-8">
     <h3><a href="{{repo.html_url}}">{{repo.name}}</a></h3>
@@ -28,8 +26,6 @@ title: FH-Potsdam Interface Design
   </div>
 </div>
 <hr>
-{% endif %}
-{% endfor %}
 
 {% endfor %}
 
