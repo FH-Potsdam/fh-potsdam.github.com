@@ -7,17 +7,11 @@ title: FH-Potsdam Interface Design
   We are <a href="members" id="org-total-members">X Members</a> with <a href="https://github.com/fh-potsdam" id="org-total-repos">Y Public Repositories</a>
 </div>
 
-
 {% for repo in site.github.public_repositories %}
-<p>repo: {{repo.name}}</p>
 
 {% assign repoAdded = false %}
 {% for repo_black in site.repo_blacklist %}
-<p>repo_black: {{repo_black}}</p>
-
 {% if repoAdded == false and repo.name != repo_black %}
-<p>repo_name: {{repo.name}}</p>
-
 <div class="row repo-data filter-{{repo.language}}">
   <div class="col-md-8">
     <h3><a href="{{repo.html_url}}">{{repo.name}}</a></h3>
@@ -36,7 +30,6 @@ title: FH-Potsdam Interface Design
 <hr>
 {% assign repoAdded = true %}
 {% endif %}
-
 {% endfor %}
 
 {% endfor %}
