@@ -4,11 +4,20 @@ title: FH-Potsdam Interface Design
 ---
 
 <div id="member-repo-stats">
-  We are <a href="members" id="org-total-members">X Members</a> with <a href="" id="org-total-repos">Y Public Repositories</a>
+  We are <a href="members" id="org-total-members">X Members</a> with <a href="https://github.com/fh-potsdam" id="org-total-repos">Y Public Repositories</a>
 </div>
 
 
 {% for repo in site.github.public_repositories %}
+<p>repo: {{repo.name}}</p>
+
+
+{% for repo_black in site.repo_blacklist %}
+<p>repo_black: {{repo_black}}</p>
+
+
+{% if repo.name != repo_black %}
+<p>repo_name: {{repo.name}}</p>
 
 <div class="row repo-data filter-{{repo.language}}">
   <div class="col-md-8">
@@ -26,6 +35,8 @@ title: FH-Potsdam Interface Design
   </div>
 </div>
 <hr>
+{% endif %}
+{% endfor %}
 
 {% endfor %}
 
