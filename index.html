@@ -11,11 +11,11 @@ title: FH-Potsdam Interface Design
 {% for repo in site.github.public_repositories %}
 <p>repo: {{repo.name}}</p>
 
-
+{% repoAdded = false %}
 {% for repo_black in site.repo_blacklist %}
 <p>repo_black: {{repo_black}}</p>
 
-
+{% if repoAdded == false %}
 {% if repo.name != repo_black %}
 <p>repo_name: {{repo.name}}</p>
 
@@ -35,8 +35,10 @@ title: FH-Potsdam Interface Design
   </div>
 </div>
 <hr>
-{% continue %}
+{% repoAdded = true %}
 {% endif %}
+{% endif %}
+
 {% endfor %}
 
 {% endfor %}
