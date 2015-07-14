@@ -1,0 +1,16 @@
+---
+layout: page
+title: FH-Potsdam GitHub Members
+---
+
+{% for member in site.github.organization_members %}
+  <div id="{{member.login}}">
+    <h1><a href="{{member.html_url}}">{{member.login}}</a></h1>
+    <img src="{{member.avatar_url}}">
+  </div>
+{% endfor %}
+
+
+<script charset="utf-8">
+  var members = {{ site.github.organization_members | jsonify }};
+</script>
