@@ -11,12 +11,11 @@ title: FH-Potsdam Interface Design
 {% for repo in site.github.public_repositories %}
 <p>repo: {{repo.name}}</p>
 
-{% repoAdded = false %}
+{% assign repoAdded = false %}
 {% for repo_black in site.repo_blacklist %}
 <p>repo_black: {{repo_black}}</p>
 
-{% if repoAdded == false %}
-{% if repo.name != repo_black %}
+{% if repoAdded == false and repo.name != repo_black %}
 <p>repo_name: {{repo.name}}</p>
 
 <div class="row repo-data filter-{{repo.language}}">
@@ -35,8 +34,7 @@ title: FH-Potsdam Interface Design
   </div>
 </div>
 <hr>
-{% repoAdded = true %}
-{% endif %}
+{% assign repoAdded = true %}
 {% endif %}
 
 {% endfor %}
