@@ -8,6 +8,7 @@ author: FHP InterfaceDesign
 repo_blacklist:
   - fh-potsdam.github.com
   - ForschungsFenster-Logger
+  - vagrant-package.json
 
 # jekyll settings
 exclude: ["README.md"]
