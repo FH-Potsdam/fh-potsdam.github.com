@@ -4,13 +4,9 @@ title: FH-Potsdam GitHub Members
 ---
 
 {% for member in site.github.organization_members %}
-  <div class="col-sm-1 col-md-1 member-avatar">
-    <a href="{{member.html_url}}"><img src="{{member.avatar_url}}"></a>
-    <h1>{{member.login}}</h1>
+  <div class="col-sm-1 col-md-1">
+    <a href="{{member.html_url}}">
+      <img class="member-avatar" src="{{member.avatar_url}}">
+    </a>
   </div>
 {% endfor %}
-
-
-<script charset="utf-8">
-  var members = {{ site.github.organization_members | jsonify }};
-</script>
