@@ -28,8 +28,12 @@ a {
   max-height:100%;
 }
 .member-avatar-container {
-  padding-left: 0px;
-  padding-right: 0px;
+  /*padding-left: 0px;*/
+  /*padding-right: 0px;*/
+    margin: 5px;
+    border-style: solid;
+    background-color: white;
+    border-radius: 2px;
 }
 
 

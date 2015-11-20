@@ -2,7 +2,7 @@ title: fh-potsdam
 description: fh-potsdam github organisation page
 baseurl: /
 production_url: http://fh-potsdam.github.io
-author: FHP InterfaceDesign
+author: FH-Potsdam InterfaceDesign
 
 # list of repositories that will be hidden from the frontend
 repo_blacklist:
@@ -13,4 +13,4 @@ repo_blacklist:
 # jekyll settings
 exclude: ["README.md"]
 auto: true
-pygments: true
+highlighter: pygments
