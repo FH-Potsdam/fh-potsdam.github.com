@@ -6,7 +6,7 @@ title: FH-Potsdam Interface Design
 <!-- ignore blacklisted repositories by style -->
 <style>
 {% for repo_black in site.repo_blacklist %}
-  #Repo-{{repo_black}} {
+  #Repo-{{repo_black | replace: '.', '-'}} {
     display: none;
   }
 {% endfor %}
@@ -20,7 +20,7 @@ title: FH-Potsdam Interface Design
 
 {% for repo in site.github.public_repositories %}
 
-  <div class="row repo-data filter-{{repo.language}}" id="Repo-{{repo.name}}">
+  <div class="row repo-data filter-{{repo.language}}" id="Repo-{{repo.name | replace: '.', '-'}}">
     <div class="col-md-8">
       <h3><a href="{{repo.html_url}}">{{repo.name}}</a></h3>
     </div>
