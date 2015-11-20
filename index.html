@@ -11,7 +11,8 @@ title: FH-Potsdam Interface Design
 
 {% assign repoAdded = false %}
 {% for repo_black in site.repo_blacklist %}
-{% if repoAdded == false and repo.name != repo_black %}
+<!-- repoAdded == false and -->
+{% if repo.name != repo_black %}
 <div class="row repo-data filter-{{repo.language}}">
   <div class="col-md-8">
     <h3><a href="{{repo.html_url}}">{{repo.name}}</a></h3>
