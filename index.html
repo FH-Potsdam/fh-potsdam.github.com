@@ -3,38 +3,40 @@ layout: page
 title: FH-Potsdam Interface Design
 ---
 
+<!-- ignore blacklisted repositories by style -->
+<style>
+{% for repo_black in site.repo_blacklist %}
+  #Repo-{{repo_black}} {
+    display: none;
+  }
+{% endfor %}
+</style>
+
+
 <div id="member-repo-stats">
   We are <a href="members" id="org-total-members">X Members</a> with <a href="https://github.com/fh-potsdam" id="org-total-repos">Y Public Repositories</a>
 </div>
 
+
 {% for repo in site.github.public_repositories %}
 
-  {% assign repoAdded = false %}
-  
-  {% for repo_black in site.repo_blacklist %}
-    <code>repo {{repo.name}} = {{repo_black}}</code>
-    <!-- repoAdded == false and -->
-    {% if repo.name != repo_black %}
-    <div class="row repo-data filter-{{repo.language}}">
-      <div class="col-md-8">
-        <h3><a href="{{repo.html_url}}">{{repo.name}}</a></h3>
-      </div>
-      <div class="col-md-2 repo-language-container">
-        <span class="repo-language {{repo.language}}-Language">{{repo.language}}</span>
-      </div>
-      <div class="col-md-2 repo-icons">
-        <span class="octicon octicon-star"></span> {{repo.stargazers_count}}
-        <span class="octicon octicon-repo-forked"></span> {{repo.forks_count}}
-      </div>
-      <div class="col-md-12">
-        <p>{{repo.description}}</p>
-      </div>
+  <div class="row repo-data filter-{{repo.language}}" id="Repo-{{repo.name}}">
+    <div class="col-md-8">
+      <h3><a href="{{repo.html_url}}">{{repo.name}}</a></h3>
     </div>
-    <hr>
-  {% assign repoAdded = true %}
-  {% endif %}
-  {% endfor %}
-
+    <div class="col-md-2 repo-language-container">
+      <span class="repo-language {{repo.language}}-Language">{{repo.language}}</span>
+    </div>
+    <div class="col-md-2 repo-icons">
+      <span class="octicon octicon-star"></span> {{repo.stargazers_count}}
+      <span class="octicon octicon-repo-forked"></span> {{repo.forks_count}}
+    </div>
+    <div class="col-md-12">
+      <p>{{repo.description}}</p>
+    </div>
+  </div>
+  <hr>
+  
 {% endfor %}
 
 
