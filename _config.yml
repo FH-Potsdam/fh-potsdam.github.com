@@ -4,7 +4,6 @@ baseurl: /
 production_url: http://fh-potsdam.github.io
 author: FH-Potsdam InterfaceDesign
 
-
 # list of repositories that will be hidden from the frontend
 repo_blacklist:
   - fh-potsdam.github.com
