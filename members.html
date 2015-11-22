@@ -5,7 +5,7 @@ title: FH-Potsdam GitHub Members
 
 {% for member in site.github.organization_members %}
   <div class="col-xs-1 col-sm-1 col-md-1 col-lg-1 member-avatar-container">
-    <a href="{{member.html_url}}">
+    <a href="{{member.html_url}}" title="{{member.login}}">
       <img class="member-avatar" alt="{{member.login}}" src="{{member.avatar_url}}">
     </a>
   </div>
