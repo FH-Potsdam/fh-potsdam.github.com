@@ -12,6 +12,6 @@ repo_blacklist:
 
 # jekyll settings
 exclude: ["README.md"]
-highlighter: pygments
+highlighter: rouge
 gems:
  - jekyll-github-metadata
