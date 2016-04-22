@@ -1,6 +1,6 @@
 title: fh-potsdam
 description: fh-potsdam github organisation page
-baseurl: /
+#baseurl: /
 production_url: http://fh-potsdam.github.io
 author: FH-Potsdam InterfaceDesign
 
@@ -12,5 +12,6 @@ repo_blacklist:
 
 # jekyll settings
 exclude: ["README.md"]
-auto: true
 highlighter: pygments
+gems:
+ - jekyll-github-metadata
